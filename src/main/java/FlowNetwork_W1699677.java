@@ -9,27 +9,6 @@
 
 //importing necessary packages
 
-import org.apache.commons.lang3.StringUtils;
-
-import java.lang.*;
-import java.util.*;
-import java.util.concurrent.ThreadLocalRandom;
-// Import the Scanner class
-
-
-public class FlowNetwork_W1699677 {
-
-    /* this will return True if there is a path from Source 'S' to Sink/Terminal 't'
-          in residual graph. And also this fills parentlist[] to store the
-          path */
-    boolean bfs(int rGraph[][], int V, int s, int t, int parentlist[]) {
-        // Create a boolean type array named 'visited[]'and mark all nodes as not visited
-        boolean isVisited[] = new boolean[V];
-        for (int i = 0; i < V; ++i)
-            isVisited[i] = false;
-
-        // Create a linkedlist named 'queuelist' , enqueue source node and mark source node as visited
-        LinkedList<Integer> queuelist = new LinkedList<Integer>();
         queuelist.add(s);
         isVisited[s] = true;
         parentlist[s] = -1;
